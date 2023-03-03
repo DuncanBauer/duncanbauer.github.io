@@ -6,7 +6,7 @@ export default function Section(props) {
             <br/>
             <br/>
             <br/>
-            <label className={props.style_1}>{props.name}</label>
+            <a href={props.link} className={props.style_1}>{props.name}</a>
             <p className={props.style_2}>{props.description}</p>
         </div>
     )
