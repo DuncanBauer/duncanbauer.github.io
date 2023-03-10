@@ -24,11 +24,10 @@
 	background-color: #333333d9;
 }
 
-
 .Sidebar {
 	display: flex;
 	flex-flow: column;
-	overflow: auto, hidden;
+	overflow-y: auto, hidden;
 
 	min-height: 100%;
 
@@ -39,6 +38,7 @@
 
 .Body {
 	display: flex;
+	overflow-x: auto, hidden;
 
 	width: 100%;
 	min-height: 300vh;
