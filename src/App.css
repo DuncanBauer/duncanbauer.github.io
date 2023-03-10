@@ -1,118 +1,64 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
 }
 
-.Header-container {
-  width: 100%;
-
-  display: inline-flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-
-  background-color: rgb(77, 74, 74);
-}
-
-.Header-clock {
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-left: 20%;
-}
-
-.Header-menu {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  margin-right: 20%;
-}
-
-.Header-menu-item {
-  margin: 20px 20px;
-}
-
-.Header-menu-item a:hover {
-  transition: ease background-color 250ms;
-  color: rgb(173, 166, 166);
-}
-
-
-
-.Section-container {
-  background-color: #333;
-  border: 0 0 1px 1px solid black;
-  height: auto;
-  width: 100%;
-}
-
-.Top-dog-0 {
-  color: rgb(255, 255, 255);
-  background-color: rgb(37, 39, 38);
-  font-size: larger;
-  height: 500px;
-}
-
-.Top-dog-1 {
-  color: rgb(255, 255, 255);
-  background-color: rgb(29, 29, 29);
-  font-size: larger;
-  height: 500px;
-}
-
-.Top-dog-2 {
-  color: rgb(255, 255, 255);
-  background-color: rgb(37, 39, 38);
-  font-size: larger;
-  height: 500px;
-}
-
-.Top-dog-3 {
-  color: rgb(255, 255, 255);
-  background-color: rgb(29, 29, 29);
-  font-size: larger;
-  height: 500px;
-}
-
-.Top-dog-column {
-  width: 30%;
-  display: inline-block;
-}
-
-.Footer-container {
-  width: 100%;
-  display: inline-flex;  
-  flex-direction: row;
-
-} 
-
-.Footer-menu {
-  display: flex;
-
-  justify-content: center;
-  align-content: center;
-  
-  width: 100%;
-  background-color: rgb(77, 74, 74);
-  
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.Footer-menu-item {
-  margin: 20px 20px;
-}
-
-.Footer-menu-item a:hover {
-  transition: ease background-color 250ms;
-  color: rgb(173, 166, 166);
+#page-wrap {
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .Divider {
-  display: inline;
-  border-left: 1px solid black;
-  size: 32px;
-  height: 50px;
+	display: inline;
+
+	height: 50px;
+
+	border-left: 1px solid black;
+	size: 32px;
+}
+
+.App {
+	display: flex;
+	flex-flow: row;
+
+	text-align: center;
+	background-color: #333333d9;
+}
+
+
+.Sidebar {
+	display: flex;
+	flex-flow: column;
+	overflow: auto, hidden;
+
+	min-height: 100%;
+
+	text-align: left;
+	color: white;
+	background-color: #333333d9;
+}
+
+.Body {
+	display: flex;
+
+	width: 100%;
+	min-height: 300vh;
+
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(29, 29, 29);
+}
+
+.Body-content {
+	width: 100%;
+	text-align: center;
+}
+
+.Body-region {
+	display: 'flex';
+	flex-flow: 'column';
+	width: 100%;
+
+	color: rgb(255, 255, 255);
+	background-color: rgb(29, 29, 29);
+	font-size: larger;
 }
