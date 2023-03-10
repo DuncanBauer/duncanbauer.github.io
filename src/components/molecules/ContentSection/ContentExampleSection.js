@@ -1,4 +1,4 @@
-import { CopyBlock, dracula, solarizedDark } from "react-code-blocks";
+import { CopyBlock, dracula } from "react-code-blocks";
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -13,9 +13,6 @@ export default function ContentExampleSection(props) {
 
 				{props.examples.map(example => <TabPanel>
 					<CopyBlock
-						style={{
-							fontSize: '8'
-						}}
 						text={example.code}
 						language={example.language}
 						showLineNumbers={example.showLineNumbers}

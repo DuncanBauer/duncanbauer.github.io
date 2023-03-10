@@ -80,6 +80,26 @@ export default function MySidebar() {
 						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/maplelib#support"		  />}>Support</MenuItem>
 					</SubMenu>
 					
+					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Maple Wz Editor">
+						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/maplewzeditor#gettingStarted" />}>Getting Started</MenuItem>
+						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/maplewzeditor#releases"	   />}>Releases</MenuItem>
+						<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/maplewzeditor#changelog"	   />}>Changelog</MenuItem>
+						<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/maplewzeditor#tutorials"	   />}>Tutorials</MenuItem>
+						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/maplewzeditor#resources"	   />}>Resources</MenuItem>
+						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/maplewzeditor#faq"			   />}>FAQ</MenuItem>
+						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/maplewzeditor#support"		   />}>Support</MenuItem>
+					</SubMenu>
+					
+					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Maple Client">
+						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/mapleclient#gettingStarted" />}>Getting Started</MenuItem>
+						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/mapleclient#releases"		 />}>Releases</MenuItem>
+						<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/mapleclient#changelog"		 />}>Changelog</MenuItem>
+						<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/mapleclient#tutorials"		 />}>Tutorials</MenuItem>
+						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/mapleclient#resources"		 />}>Resources</MenuItem>
+						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/mapleclient#faq"			 />}>FAQ</MenuItem>
+						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/mapleclient#support"		 />}>Support</MenuItem>
+					</SubMenu>
+					
 					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Maple Server">
 						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/mapleserver#gettingStarted" />}>Getting Started</MenuItem>
 						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/mapleserver#releases"		 />}>Releases</MenuItem>
@@ -90,16 +110,6 @@ export default function MySidebar() {
 						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/mapleserver#resources"		 />}>Resources</MenuItem>
 						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/mapleserver#faq"			 />}>FAQ</MenuItem>
 						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/mapleserver#support"		 />}>Support</MenuItem>
-					</SubMenu>
-					
-					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Maple Wz Editor">
-						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/maplewzeditor#gettingStarted" />}>Getting Started</MenuItem>
-						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/maplewzeditor#releases"	   />}>Releases</MenuItem>
-						<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/maplewzeditor#changelog"	   />}>Changelog</MenuItem>
-						<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/maplewzeditor#tutorials"	   />}>Tutorials</MenuItem>
-						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/maplewzeditor#resources"	   />}>Resources</MenuItem>
-						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/maplewzeditor#faq"			   />}>FAQ</MenuItem>
-						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/maplewzeditor#support"		   />}>Support</MenuItem>
 					</SubMenu>
 
 					<MenuItem icon={<CreateOutlinedIcon/>}   component={<Link to="/blog"      />}>Blog</MenuItem>

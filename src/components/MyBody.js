@@ -9,8 +9,9 @@ import Support       from './molecules/pages/Support';
 
 import AuroraEngine  from './molecules/pages/projects/AuroraEngine';
 import MapleLib 	 from './molecules/pages/projects/MapleLib';
-import MapleServer 	 from './molecules/pages/projects/MapleServer';
 import MapleWzEditor from './molecules/pages/projects/MapleWzEditor';
+import MapleClient 	 from './molecules/pages/projects/MapleClient';
+import MapleServer 	 from './molecules/pages/projects/MapleServer';
 
 export default function MyBody(props) {
 	return (
@@ -20,13 +21,14 @@ export default function MyBody(props) {
 
 				<Route exact path="/auroraengine"	element={ <AuroraEngine  className="Body-region"/> } />
 				<Route exact path="/maplelib"		element={ <MapleLib      className="Body-region"/> } />
-				<Route exact path="/mapleserver"	element={ <MapleServer   className="Body-region"/> } />
 				<Route exact path="/maplewzeditor"	element={ <MapleWzEditor className="Body-region"/> } />
+				<Route exact path="/mapleclient"	element={ <MapleClient   className="Body-region"/> } />
+				<Route exact path="/mapleserver"	element={ <MapleServer   className="Body-region"/> } />
 
-				<Route exact path="/blog"        element={ <Blog        className="Body-region"/> } />
-				<Route exact path="/resources"   element={ <Resources   className="Body-region"/> } />
-				<Route exact path="/about"       element={ <About       className="Body-region"/> } />
-				<Route exact path="/support"     element={ <Support     className="Body-region"/> } />
+				<Route exact path="/blog"		element={ <Blog        className="Body-region"/> } />
+				<Route exact path="/resources"	element={ <Resources   className="Body-region"/> } />
+				<Route exact path="/about"		element={ <About       className="Body-region"/> } />
+				<Route exact path="/support"	element={ <Support     className="Body-region"/> } />
 			</Routes>
 		</div>
 	)
