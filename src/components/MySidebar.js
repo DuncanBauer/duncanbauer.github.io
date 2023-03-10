@@ -3,7 +3,6 @@ import { HashLink as AnchorLink } from 'react-router-hash-link'; // Used for rou
 import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar';
 
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import ApiOutlinedIcon from '@mui/icons-material/ApiOutlined';
 import PlayCircleOutlineOutlinedIcon from '@mui/icons-material/PlayCircleOutlineOutlined';
@@ -57,34 +56,53 @@ export default function MySidebar() {
 					</div>
 
 					<MenuItem icon={<HomeOutlinedIcon/>} component={<Link to="/" />}>Home</MenuItem>
-					<SubMenu label="Project Aurora">
-						<MenuItem icon={<BookmarkBorderOutlinedIcon />}  component={<AnchorLink to="/projectaurora#introduction" />}>Introduction</MenuItem>
-						
-						<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Aurora Engine Library">
-							<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/projectaurora/enginelib#gettingStarted" />}>Getting Started</MenuItem>
-							<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/projectaurora/enginelib#releases"		 />}>Releases</MenuItem>
-							<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/projectaurora/enginelib#changelog"		 />}>Changelog</MenuItem>
-							<MenuItem icon={<ApiOutlinedIcon/>}					 component={<AnchorLink to="/projectaurora/enginelib#api"			 />}>Api</MenuItem>
-							<MenuItem icon={<MenuBookOutlinedIcon/>} 			 component={<AnchorLink to="/projectaurora/enginelib#documentation"	 />}>Documentation</MenuItem>
-							<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/projectaurora/enginelib#tutorials"		 />}>Tutorials</MenuItem>
-						</SubMenu>
-						
-						<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Aurora Maple Library">
-							<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/projectaurora/maplelib#gettingStarted" />}>Getting Started</MenuItem>
-							<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/projectaurora/maplelib#releases"		/>}>Releases</MenuItem>
-							<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/projectaurora/maplelib#changelog"		/>}>Changelog</MenuItem>
-							<MenuItem icon={<ApiOutlinedIcon/>} 				 component={<AnchorLink to="/projectaurora/maplelib#api"			/>}>Api</MenuItem>
-							<MenuItem icon={<MenuBookOutlinedIcon/>} 			 component={<AnchorLink to="/projectaurora/maplelib#documentation"	/>}>Documentation</MenuItem>
-							<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/projectaurora/maplelib#tutorials"		/>}>Tutorials</MenuItem>
-						</SubMenu>
-
-						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 	 component={<AnchorLink to="/projectaurora#FAQ"			 />}>FAQ</MenuItem>
-						<MenuItem icon={<BuildOutlinedIcon/>}			 component={<AnchorLink to="/projectaurora#support"		 />}>Support</MenuItem>
-
+					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Aurora Engine">
+						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/auroraengine#gettingStarted" />}>Getting Started</MenuItem>
+						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/auroraengine#releases"		  />}>Releases</MenuItem>
+						<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/auroraengine#changelog"	  />}>Changelog</MenuItem>
+						<MenuItem icon={<ApiOutlinedIcon/>}					 component={<AnchorLink to="/auroraengine#api"			  />}>Api</MenuItem>
+						<MenuItem icon={<MenuBookOutlinedIcon/>} 			 component={<AnchorLink to="/auroraengine#documentation"  />}>Documentation</MenuItem>
+						<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/auroraengine#tutorials"	  />}>Tutorials</MenuItem>
+						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/auroraengine#resources"	  />}>Resources</MenuItem>
+						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/auroraengine#faq"			  />}>FAQ</MenuItem>
+						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/auroraengine#support"		  />}>Support</MenuItem>
+					</SubMenu>
+					
+					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Maple Library">
+						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/maplelib#gettingStarted" />}>Getting Started</MenuItem>
+						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/maplelib#releases"		  />}>Releases</MenuItem>
+						<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/maplelib#changelog"	  />}>Changelog</MenuItem>
+						<MenuItem icon={<ApiOutlinedIcon/>} 				 component={<AnchorLink to="/maplelib#api"			  />}>Api</MenuItem>
+						<MenuItem icon={<MenuBookOutlinedIcon/>} 			 component={<AnchorLink to="/maplelib#documentation"  />}>Documentation</MenuItem>
+						<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/maplelib#tutorials"	  />}>Tutorials</MenuItem>
+						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/maplelib#resources"	  />}>Resources</MenuItem>
+						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/maplelib#faq"			  />}>FAQ</MenuItem>
+						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/maplelib#support"		  />}>Support</MenuItem>
+					</SubMenu>
+					
+					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Maple Server">
+						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/mapleserver#gettingStarted" />}>Getting Started</MenuItem>
+						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/mapleserver#releases"		 />}>Releases</MenuItem>
+						<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/mapleserver#changelog"		 />}>Changelog</MenuItem>
+						<MenuItem icon={<ApiOutlinedIcon/>} 				 component={<AnchorLink to="/mapleserver#api"			 />}>Api</MenuItem>
+						<MenuItem icon={<MenuBookOutlinedIcon/>} 			 component={<AnchorLink to="/mapleserver#documentation"  />}>Documentation</MenuItem>
+						<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/mapleserver#tutorials"		 />}>Tutorials</MenuItem>
+						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/mapleserver#resources"		 />}>Resources</MenuItem>
+						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/mapleserver#faq"			 />}>FAQ</MenuItem>
+						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/mapleserver#support"		 />}>Support</MenuItem>
+					</SubMenu>
+					
+					<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Maple Wz Editor">
+						<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/maplewzeditor#gettingStarted" />}>Getting Started</MenuItem>
+						<MenuItem icon={<NewReleasesOutlinedIcon/>} 		 component={<AnchorLink to="/maplewzeditor#releases"	   />}>Releases</MenuItem>
+						<MenuItem icon={<PublishedWithChangesOutlinedIcon/>} component={<AnchorLink to="/maplewzeditor#changelog"	   />}>Changelog</MenuItem>
+						<MenuItem icon={<LaptopOutlinedIcon/>} 				 component={<AnchorLink to="/maplewzeditor#tutorials"	   />}>Tutorials</MenuItem>
+						<MenuItem icon={<SettingsOutlinedIcon/>}			 component={<AnchorLink to="/maplewzeditor#resources"	   />}>Resources</MenuItem>
+						<MenuItem icon={<QuestionMarkOutlinedIcon/>} 		 component={<AnchorLink to="/maplewzeditor#faq"			   />}>FAQ</MenuItem>
+						<MenuItem icon={<BuildOutlinedIcon/>}				 component={<AnchorLink to="/maplewzeditor#support"		   />}>Support</MenuItem>
 					</SubMenu>
 
 					<MenuItem icon={<CreateOutlinedIcon/>}   component={<Link to="/blog"      />}>Blog</MenuItem>
-					<MenuItem icon={<SettingsOutlinedIcon/>} component={<Link to="/resources" />}>Resources</MenuItem>
 					<MenuItem icon={<InfoOutlinedIcon/>}	 component={<Link to="/about"     />}>About</MenuItem>
 
 				</Menu>

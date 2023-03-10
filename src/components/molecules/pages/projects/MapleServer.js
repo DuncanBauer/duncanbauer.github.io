@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentSection from '../../ContentSection/ContentSection';
 
-class AuroraEngine extends React.Component {
+class MapleServer extends React.Component {
 	render() {
 		const documentationExamples = [
 			{
@@ -27,7 +27,6 @@ int main(int argc, char** argv)
 			}
 		];
 
-		
 		const tutorialExamples = [
 			{
 				language: 'cpp',
@@ -53,8 +52,8 @@ int main(int argc, char** argv)
 
 		return (
 			<div className="Body-content">
-			<h1>Aurora Engine Lib</h1>
 				<div id="gettingStarted">
+					<h1>Aurora Maple Server</h1>
 					<ContentSection className={this.props.className}
 									sectionName='Getting Started'
 									explanation='A simple hello world description whose width can definitely, 100%, totally fill 100% of the screens width, right? I need to add more text to actually test that though' />
@@ -91,9 +90,27 @@ int main(int argc, char** argv)
 									explanation='Good luck noob'
 									examples={tutorialExamples}/>
 				</div>
+
+				<div id="resources">
+					<ContentSection className={this.props.className}
+									sectionName='Resources'
+									explanation='tools used to build this biatch' />
+				</div>
+
+				<div id="faq">
+					<ContentSection className={this.props.className}
+									sectionName='FAQ'
+									explanation='a buncha questions' />
+				</div>
+
+				<div id="support">
+					<ContentSection className={this.props.className}
+									sectionName='Support'
+									explanation='for questions not in faq' />
+				</div>
 			</div>
 		)
 	}
 }
 
-export default AuroraEngine;
+export default MapleServer;
