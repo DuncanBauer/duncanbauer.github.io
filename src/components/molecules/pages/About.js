@@ -1,13 +1,14 @@
 import React from 'react';
 
+import ContentSection from '../ContentSection/ContentSection'
+
 class About extends React.Component {
 	render() {
 		return (
 			<div className={this.props.style}>
-				<h2>About Page</h2>
-				<main>
-					<p>This section contains information about...</p>
-				</main>
+				<ContentSection className={this.props.className}
+								sectionName='About'
+								explanation='The official about page. From dsfghjbdkfgjhbsdfgkj all the way to dfgjkhdsfgkjdbhsfg you can find it all if you just google it' />
 			</div>
 		)
 	}
