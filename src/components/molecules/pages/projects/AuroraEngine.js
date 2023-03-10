@@ -52,11 +52,15 @@ int main(int argc, char** argv)
 
 		return (
 			<div className="Body-content">
+				<h1>Aurora Engine</h1>
+				<ContentSection className={this.props.className}
+								sectionName='Introduction'
+								explanation='A simple hello world description whose width can definitely, 100%, totally fill 100% of the screens width, right? I need to add more text to actually test that though' />
+
 				<div id="gettingStarted">
-					<h1>Aurora Engine Lib</h1>
 					<ContentSection className={this.props.className}
 									sectionName='Getting Started'
-									explanation='A simple hello world description whose width can definitely, 100%, totally fill 100% of the screens width, right? I need to add more text to actually test that though' />
+									explanation='Here you can find our distribution binaries' />
 				</div>
 
 				<div id="releases">
