@@ -19,6 +19,7 @@ import LaptopOutlinedIcon from '@mui/icons-material/LaptopOutlined';
 import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';
 
 import { SiCplusplus, SiJavascript } from "react-icons/si";
+import { SlLayers } from "react-icons/sl";
 
 export default function MySidebar() {
 	const { collapseSidebar } = useProSidebar();
@@ -59,7 +60,7 @@ export default function MySidebar() {
 					</div>
 
 					<MenuItem icon={<HomeOutlinedIcon/>} component={<Link to="/" />}>Home</MenuItem>
-					<SubMenu label="Projects">
+					<SubMenu icon={<SlLayers/>} label="Projects">
 						<SubMenu icon={<StarOutlineOutlinedIcon/>} label="Aurora Engine">
 							<MenuItem icon={<BoltOutlinedIcon/>}				 component={<AnchorLink to="/projects/auroraengine"				  />}>Introduction</MenuItem>
 							<MenuItem icon={<PlayCircleOutlineOutlinedIcon/>}	 component={<AnchorLink to="/projects/auroraengine#gettingStarted" />}>Getting Started</MenuItem>
